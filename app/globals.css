@@ -1,26 +1,144 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-primary: #080808;
+  --bg-subtle: #0D0D0F;
+  --bg-card: #111113;
+  --bg-dark: #050507;
+  --bg-dark-alt: #0A0A0C;
+  --text-primary: #E5E5E5;
+  --text-secondary: #888888;
+  --text-muted: #555555;
+  --accent: #5B9EFF;
+  --verified: #22C55E;
+  --error: #EF4444;
+  --border: #1F1F22;
+  --border-dark: #2A2A2E;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-sans: 'DM Sans', sans-serif;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-subtle: var(--bg-subtle);
+  --color-bg-card: var(--bg-card);
+  --color-bg-dark: var(--bg-dark);
+  --color-bg-dark-alt: var(--bg-dark-alt);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-accent: var(--accent);
+  --color-verified: var(--verified);
+  --color-error: var(--error);
+  --color-border: var(--border);
+  --color-border-dark: var(--border-dark);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-subtle);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-dark);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* Pulse animation for status dot */
+@keyframes pulse-dot {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+}
+
+.animate-pulse-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+/* Selection color */
+::selection {
+  background: var(--accent);
+  color: white;
+}
+
+/* Proof block / dark card styling */
+.proof-block {
+  background: var(--bg-dark);
+  border: 1px solid var(--border-dark);
+  border-radius: 6px;
+  font-family: var(--font-mono);
+  color: #E5E5E5;
+}
+
+.proof-block-alt {
+  background: var(--bg-dark-alt);
+  border: 1px solid var(--border-dark);
+  border-radius: 6px;
+  font-family: var(--font-mono);
+  color: #E5E5E5;
+}
+
+/* Step card alternating backgrounds */
+.step-card:nth-child(even) {
+  background: var(--bg-subtle);
+}
+
+.step-card:nth-child(odd) {
+  background: var(--bg-primary);
+}
+
+/* Reading content prose */
+.prose-essay {
+  font-family: var(--font-sans);
+  font-size: 16.5px;
+  line-height: 1.78;
+  color: var(--text-primary);
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prose-essay p {
+  margin-bottom: 1.5em;
+}
+
+.prose-essay h3 {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-top: 2.5em;
+  margin-bottom: 0.8em;
+  color: var(--text-primary);
+}
+
+.prose-essay strong {
+  font-weight: 600;
 }
