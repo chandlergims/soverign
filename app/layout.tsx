@@ -15,13 +15,11 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "spwn — The first token not launched by a human",
+  title: "Sovereign",
   description:
-    "$SPWN was created and deployed entirely inside a Trusted Execution Environment (TEE) on EigenCloud. No human accessed the wallet. No human signed the transaction. Cryptographically verified.",
+    "$Sovereign was created and deployed entirely inside a Trusted Execution Environment (TEE) on EigenCloud. No human accessed the wallet. No human signed the transaction. Cryptographically verified.",
   keywords: [
-    "spwn",
-    "autonomous",
-    "AI agent",
+    "Sovereign",
     "token",
     "TEE",
     "Solana",
@@ -29,19 +27,21 @@ export const metadata: Metadata = {
     "EigenCloud",
     "decentralized",
   ],
+  icons: {
+    icon: "/Untitled_design_-_2026-03-01T163121.706.png",
+  },
   openGraph: {
-    title: "spwn — The first token not launched by a human",
+    title: "Sovereign",
     description:
-      "$SPWN was created and deployed entirely inside a TEE. No human accessed the wallet. No human signed the transaction. Verifiable proof of autonomous creation.",
-    url: "https://spwn.fun",
-    siteName: "spwn.fun",
+      "$Sovereign was created and deployed entirely inside a TEE. No human accessed the wallet. No human signed the transaction. Verifiable proof.",
+    siteName: "Sovereign",
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "spwn — The first token not launched by a human",
+    title: "Sovereign",
     description:
-      "$SPWN was created inside a TEE. No human accessed the wallet. No human signed the transaction. Cryptographically verified.",
+      "$Sovereign was created inside a TEE. No human accessed the wallet. No human signed the transaction. Cryptographically verified.",
   },
 };
 

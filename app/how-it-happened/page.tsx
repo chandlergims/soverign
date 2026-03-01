@@ -2,9 +2,9 @@ import SubPageLayout from "@/components/SubPageLayout";
 import HowItHappened from "@/components/HowItHappened";
 
 export const metadata = {
-  title: "Origin — spwn.fun",
+  title: "Origin | Sovereign",
   description:
-    "The full 6-step creation pipeline: from sealed TEE enclave initialization to live Solana token deployment. No human involved at any stage.",
+    "The full 6-step creation pipeline: from sealed TEE enclave initialization to live Solana token deployment.",
 };
 
 export default function HowItHappenedPage() {

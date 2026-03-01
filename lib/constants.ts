@@ -17,7 +17,7 @@ export const NAV_LINKS = [
 ] as const;
 
 export const SOCIAL_LINKS = [
-  { label: "X / Twitter", href: "#" },
+  { label: "X / Twitter", href: "https://x.com/sovereign23866" },
 ] as const;
 
 export const STEPS = [

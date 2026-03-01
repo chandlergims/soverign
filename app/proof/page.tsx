@@ -2,9 +2,9 @@ import SubPageLayout from "@/components/SubPageLayout";
 import TheProof from "@/components/TheProof";
 
 export const metadata = {
-  title: "TEE Proof — spwn.fun",
+  title: "TEE Proof | Sovereign",
   description:
-    "Don't trust. Verify. The cryptographic attestation proving $SPWN was deployed with zero human involvement — hardware-signed and publicly verifiable.",
+    "Don't trust. Verify. The cryptographic attestation proving $Sovereign was deployed with zero human involvement — hardware-signed and publicly verifiable.",
 };
 
 export default function ProofPage() {
