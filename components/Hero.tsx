@@ -151,8 +151,8 @@ export default function Hero() {
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-[#555] w-[100px] shrink-0">Eigen Wallet</span>
-                <a href="https://solscan.io/account/HWZDuZz8duF91YuAziv2XY57fS989hN7AhKxM83oLW8G" target="_blank" rel="noopener noreferrer" className="text-[var(--accent)] hover:underline">
-                  HWZD...LW8G →
+                <a href="https://solscan.io/account/2eaCwxajRFzZHZtQ2gX8Ca6qBD6bZ418a71CdiSrzn5K" target="_blank" rel="noopener noreferrer" className="text-[var(--accent)] hover:underline">
+                  2eaC...zn5K →
                 </a>
               </div>
             </div>
